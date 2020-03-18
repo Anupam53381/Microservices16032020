@@ -18,6 +18,7 @@ public class GalleryMsApplication {
 	@Bean
 	@LoadBalanced
 	public RestTemplate restTemplate() {
+		System.out.println("Ram");
 		return new RestTemplate();
 	}
 
