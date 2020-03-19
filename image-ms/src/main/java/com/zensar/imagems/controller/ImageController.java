@@ -17,9 +17,9 @@ public class ImageController {
 	private String instance;
 	
 	@Value("${some.property}")
-	private String someProperty;
+	private String someProperty;  // class,instance,local
 	
-	
+	//http://localhost:8082/images
 	@RequestMapping(value = "/images")
 	public List<Image> getAllImages() {
 		
